@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Profil from "@components/Profil";
-import { DELETE } from "@app/api/prompt/[id]/route";
 
 const MyProfil = () => {
   const { data: session } = useSession();
@@ -41,7 +40,7 @@ const MyProfil = () => {
         data={posts}
         handleEdit={handleEdit}
         handleDelete={handleDelete}
-      />
+      />{" "}
     </div>
   );
 };

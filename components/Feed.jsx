@@ -35,7 +35,7 @@ const Feed = () => {
           required
         />
       </form>
-      <PromptCardList data={post} handleTagClick={() => {}} />
+      <PromptCardList key={post.id} data={post} handleTagClick={() => {}} />
     </section>
   );
 };
